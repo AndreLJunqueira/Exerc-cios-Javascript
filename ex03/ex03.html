@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome? ')
+        document.writeln(`<h1>Olá <em>${nome}</em>. Seu nome tem ${nome.length} letras.</h1>`)
+        var n1 = 1545.5
+        document.writeln(n1.toFixed(2))
+        document.writeln(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+    </script>
+</body>
+</html>
