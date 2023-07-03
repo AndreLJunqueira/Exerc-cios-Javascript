@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificação de Nascionalidade</h1>
+
+    Informe seu País de origem <input type="text" name="nasc" id="nasc">
+
+    <input type="button" value="Verificar" onclick="testando()">
+    
+    <div id="res">
+
+    </div>
+
+    <script>
+        function testando() {
+            var pais = document.getElementById('nasc')
+            var res = document.querySelector('div#res')
+            res.innerHTML = `<p>Seu país de origem é ${pais.value}</p>`
+            if (pais.value == 'Brasil') {
+                res.innerHTML += 'Brasileiro'
+            } else {
+
+                res.innerHTML += 'Estrangeiro'
+            }
+
+        }
+    </script>
+</body>
+</html>
