@@ -5,8 +5,8 @@ function calcular() {
    if (N.value.length == 0) {
         window.alert(`Por favor Digite um Número!`)
    } else {
-    var d = Number(N.value)
-    tab.innerHTML = ``
+          var d = Number(N.value)
+          tab.innerHTML = ``
     for(var c = 1; c <= 10; c++) {
           var item = document.createElement(`option`)
          item.text = `${d} * ${c} = ${d*c}`
