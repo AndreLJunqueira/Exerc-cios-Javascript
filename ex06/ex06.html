@@ -31,7 +31,7 @@
         var tn2 = document.querySelector('input#txtn2') //tanto faz usar o querySelector ou o getElementById.
         var res = document.getElementById('res')
         var n1 = Number.parseInt(tn1.value)//convertendo a caixa de texto para número.
-        var n2 = Number.parseInt(tn2.value)
+        var n2 = Number.parseInt(tn2.value) //pode deixar tb só o Number que o JS se vira.
         var s = n1 + n2
         res.innerHTML = `A soma entre ${n1} e ${n2} é igual a ${s}`
 
