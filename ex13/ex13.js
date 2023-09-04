@@ -20,3 +20,12 @@ function fatorial(n) {
     return fat
 }
 console.log(fatorial(5))
+
+function fat(nu) {
+    if (nu == 1) {
+        return 1
+    } else {
+        return nu * fat(nu-1)
+    }
+}
+console.log(fat(5)) //Usando a função com recursividade
